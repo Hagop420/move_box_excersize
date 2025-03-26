@@ -8,6 +8,7 @@ border: red 3px solid;
 
 }
 h1{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
 body{
    display: flex;
    justify-content: center;
@@ -16,15 +17,6 @@ body{
    min-height: 100vh;
    background-color: rgb(156, 221, 225);
 }
-
-
-
-
-/* .outer{
-   position: relative;
-} */
-
-
 
 .square{
    display: flex;
