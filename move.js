@@ -22,16 +22,6 @@ function getRandomClr() {
 
 }
 
-
-
-
- 
-
-
-
-
-
-
 function changeSquarePositionPlus() {
    mainSquare.style.position = 'relative'
    mainSquare.style.transform = 'translateX(360px)'
@@ -45,16 +35,6 @@ function changeSquarePositionMinus() {
       mainSquare.style.transition = 'transform 1.5s ease-in-out';
   
 }
-
-
-
-
-
-
-
-
-
-
 mainSquare.addEventListener('click', (e) => {
 
    let color = window.getComputedStyle(mainSquare).backgroundColor
@@ -63,7 +43,6 @@ mainSquare.addEventListener('click', (e) => {
       getRandomClr()
       return;
    }
-   
    
    // color random
    let randomColor = getRandomClr();
@@ -77,7 +56,6 @@ mainSquare.addEventListener('click', (e) => {
 
    if (mainSquare.style.backgroundColor === randomColor) {
       setTimeout(() => {
-         // mainSquare.style.backgroundColor = randomColor;
          changeSquarePositionMinus()
          getRandomClr()
       }, 100);
